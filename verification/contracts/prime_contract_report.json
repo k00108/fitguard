@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "successful_prime_activates_pl": true,
+    "successful_prime_marks_acceleration": true,
+    "successful_prime_runs_once": true,
+    "auto_prime_failure_falls_back": true,
+    "auto_prime_failure_records_reason": true,
+    "auto_prime_failure_releases_pl": true,
+    "strict_prime_failure_raises": true,
+    "strict_prime_failure_releases_pl": true
+  },
+  "passed": true
+}

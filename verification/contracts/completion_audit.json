@@ -1,0 +1,84 @@
+{
+  "audit_date": "2026-10-17",
+  "objective": "Independent six-layer Conv1D PL acceleration without overwriting the stable FitGuard project",
+  "steps": [
+    {
+      "step": 1,
+      "name": "independent project and stable baseline preservation",
+      "status": "complete",
+      "evidence": [
+        "<ORIGINAL_PROJECT>/fitguard_unified.xpr last written 2026-10-01 11:32:11",
+        "<PROJECT_ROOT>/vivado/fitguard_unified_cnn_pl.xpr",
+        "board stable fitguard_unified.bit hash matches pre-PL export",
+        "board stable V6 model tree hash matches 20261012 snapshot",
+        "installer_contract_report.json passed"
+      ]
+    },
+    {
+      "step": 2,
+      "name": "M01-M06 model contract and golden vectors",
+      "status": "complete",
+      "evidence": ["56 trials", "1232 windows", "18 board regression vectors"]
+    },
+    {
+      "step": 3,
+      "name": "fixed-point selection and regression",
+      "status": "complete",
+      "evidence": ["fixed_point_scan.json", "Q18.13 class agreement 1.0"]
+    },
+    {
+      "step": 4,
+      "name": "HLS C simulation",
+      "status": "complete",
+      "evidence": ["fitguard_cnn_conv_csim.log: CSim done with 0 errors", "max GAP error 0.000122070312"]
+    },
+    {
+      "step": 5,
+      "name": "HLS synthesis and IP export",
+      "status": "complete",
+      "evidence": ["fitguard_cnn_conv_ip_final_four_lane.zip", "worst latency 23.795 ms at 50 MHz"]
+    },
+    {
+      "step": 6,
+      "name": "Vivado integration",
+      "status": "complete",
+      "evidence": ["fitguard_cnn_conv_0", "axi_dma_cnn_0 at 0x40410000", "hardware_contract_report.json passed"]
+    },
+    {
+      "step": 7,
+      "name": "implementation and bitstream generation",
+      "status": "complete",
+      "evidence": ["fitguard_unified_cnn_pl.bit", "fitguard_unified_cnn_pl.hwh", "WNS +3.586 ns", "all timing constraints met"]
+    },
+    {
+      "step": 8,
+      "name": "PYNQ runtime, fallback, deployment and offline contracts",
+      "status": "complete",
+      "evidence": [
+        "runtime_contract_report.json passed",
+        "fallback_contract_report.json passed",
+        "mock_pynq_contract_report.json passed",
+        "installer_contract_report.json passed"
+      ]
+    },
+    {
+      "step": 9,
+      "name": "real PYNQ DMA golden self-test and live backend confirmation",
+      "status": "complete",
+      "evidence": [
+        "board-generated fitguard_cnn_pl_board_selftest.json with passed=true",
+        "18/18 cases, max_abs_error 0.0001220703125",
+        "current board self-test steady mean latency 33.218727 ms, p95 33.427558 ms",
+        "board runtime dependency contract passed for the clean CNN-PL path",
+        "cnn_v6_run_0004 live record: backend.active=pl_cnn_conv1d",
+        "cnn_v6_run_0004 live record: pl_acceleration_active=true",
+        "cnn_v6_run_0004 live record: axi_dma_cnn_0 calls=1, last_ms=33.471704",
+        "live gateway WHO_AM_I=0x68 at 49.999986 Hz with no loss, CRC, length, order, or queue errors"
+      ]
+    }
+  ],
+  "offline_steps_complete": 8,
+  "real_board_steps_complete": 1,
+  "total_steps": 9,
+  "overall_status": "complete"
+}

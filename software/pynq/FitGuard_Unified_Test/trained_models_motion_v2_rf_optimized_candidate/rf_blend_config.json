@@ -1,0 +1,12 @@
+{
+  "feature_version": "fitguard_motion_v2_robust_stats_v1",
+  "labels": [
+    "Stable",
+    "Mild Abnormality",
+    "Marked Abnormality"
+  ],
+  "base_model": "fitguard_motion_v2_rf_base_numpy.npz",
+  "robust_model": "fitguard_motion_v2_rf_robust_numpy.npz",
+  "robust_weight": 0.75,
+  "base_weight": 0.25
+}

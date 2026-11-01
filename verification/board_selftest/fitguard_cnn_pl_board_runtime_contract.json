@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "live_entrypoint_imports": true,
+    "interface_is_frozen": true,
+    "supports_auto_pl_backend": true,
+    "supports_manual_unlimited_run": true,
+    "supports_sensor_fault_threshold": true,
+    "supports_state_smoothing": true
+  },
+  "passed": true
+}

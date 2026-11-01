@@ -1,0 +1,1658 @@
+{
+  "report_type": "post_training_input_ablation",
+  "warning": "Ablated branches are replaced with their normalized training mean. This tests dependency of the deployed fusion model; it is not a comparison with separately retrained unimodal models.",
+  "model": "cnn_v6_no_excursion_m01_m06",
+  "backend": {
+    "requested": "auto",
+    "active": "numpy_ps",
+    "pl_acceleration_active": false,
+    "note": "CNN V7 currently uses the verified NumPy PS reference. PL must not be claimed until an HLS bitstream passes the golden probability and latency checks."
+  },
+  "subjects": {
+    "M01": 154,
+    "M02": 220,
+    "M03": 176,
+    "M04": 176,
+    "M05": 154,
+    "M06": 154
+  },
+  "trials": 47,
+  "windows": 1034,
+  "window_metrics": {
+    "full": {
+      "accuracy": 0.9439071566731141,
+      "macro_f1": 0.943655023349161,
+      "confusion_matrix": [
+        [
+          330,
+          0,
+          0
+        ],
+        [
+          22,
+          301,
+          7
+        ],
+        [
+          18,
+          11,
+          345
+        ]
+      ]
+    },
+    "imu_mean_replaced": {
+      "accuracy": 0.4090909090909091,
+      "macro_f1": 0.3540745427004055,
+      "confusion_matrix": [
+        [
+          25,
+          197,
+          108
+        ],
+        [
+          13,
+          246,
+          71
+        ],
+        [
+          5,
+          217,
+          152
+        ]
+      ]
+    },
+    "vision_mean_replaced": {
+      "accuracy": 0.9264990328820116,
+      "macro_f1": 0.9262724437581372,
+      "confusion_matrix": [
+        [
+          330,
+          0,
+          0
+        ],
+        [
+          25,
+          300,
+          5
+        ],
+        [
+          22,
+          24,
+          328
+        ]
+      ]
+    }
+  },
+  "trial_metrics": {
+    "full": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          17
+        ]
+      ]
+    },
+    "imu_mean_replaced": {
+      "accuracy": 0.44680851063829785,
+      "macro_f1": 0.34848484848484845,
+      "confusion_matrix": [
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          11,
+          6
+        ]
+      ]
+    },
+    "vision_mean_replaced": {
+      "accuracy": 0.9787234042553191,
+      "macro_f1": 0.9791463017269469,
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          1,
+          16
+        ]
+      ]
+    }
+  },
+  "elapsed_seconds": 4.235000000000582,
+  "trials_detail": [
+    {
+      "subject": "M01",
+      "label": "Marked Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.07608611136674881,
+            0.00031167236738838255,
+            0.9236021637916565
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.2160167694091797,
+            0.531947672367096,
+            0.252035528421402
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.0663468986749649,
+            8.237636211561039e-05,
+            0.9335708022117615
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M01",
+      "label": "Marked Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.0873490497469902,
+            0.0006044828915037215,
+            0.9120463728904724
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.18742117285728455,
+            0.5582404732704163,
+            0.25433844327926636
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.08580630272626877,
+            9.122468327404931e-05,
+            0.9141024947166443
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M01",
+      "label": "Marked Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04574739933013916,
+            0.0006484921323135495,
+            0.9536041617393494
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.170225128531456,
+            0.6509726047515869,
+            0.1788022667169571
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.0457143560051918,
+            8.214460831368342e-05,
+            0.9542034268379211
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M01",
+      "label": "Mild Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.0778360664844513,
+            0.8835590481758118,
+            0.03860485553741455
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.15152586996555328,
+            0.7009696364402771,
+            0.14750447869300842
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.09372618794441223,
+            0.8937908411026001,
+            0.012482922524213791
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M01",
+      "label": "Mild Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.13880805671215057,
+            0.861117422580719,
+            7.444262155331671e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.19696487486362457,
+            0.6968799233436584,
+            0.10615524649620056
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.16422921419143677,
+            0.8331338763237,
+            0.0026369569823145866
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M01",
+      "label": "Mild Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04545805603265762,
+            0.9544572830200195,
+            8.473530760966241e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.13012610375881195,
+            0.735447883605957,
+            0.13442601263523102
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04569374397397041,
+            0.9526152014732361,
+            0.001691043726168573
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M01",
+      "label": "Stable",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999876022338867,
+            4.022053019525629e-07,
+            1.1953871762671042e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.24006743729114532,
+            0.47437235713005066,
+            0.2855601906776428
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999702572822571,
+            8.007922929209599e-07,
+            2.8823194952565245e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Marked Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04673565551638603,
+            0.0011419745860621333,
+            0.9521224498748779
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.1475648134946823,
+            0.6288818717002869,
+            0.22355340421199799
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.08583619445562363,
+            0.0005887476727366447,
+            0.9135749936103821
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Marked Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.021877946332097054,
+            3.0790142773184925e-05,
+            0.9780912399291992
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.13690757751464844,
+            0.6047149896621704,
+            0.2583774924278259
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04547394812107086,
+            1.3500220120477024e-05,
+            0.9545125961303711
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Marked Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04546409845352173,
+            2.095183117489796e-05,
+            0.9545148611068726
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.13464461266994476,
+            0.5767111778259277,
+            0.2886442244052887
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.045956458896398544,
+            3.921903407899663e-05,
+            0.9540042877197266
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Mild Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.07250940054655075,
+            0.9261597990989685,
+            0.001330820843577385
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.12674881517887115,
+            0.7012491226196289,
+            0.17200206220149994
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.09509007632732391,
+            0.8796144127845764,
+            0.025295555591583252
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Mild Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04545729234814644,
+            0.9074577689170837,
+            0.04708503186702728
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.08844655007123947,
+            0.6140986680984497,
+            0.29745471477508545
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04550774395465851,
+            0.9524411559104919,
+            0.0020510358735919
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Mild Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04553477466106415,
+            0.9404142498970032,
+            0.014050951227545738
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.12220335751771927,
+            0.6624522805213928,
+            0.2153443694114685
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.0487564355134964,
+            0.9453930258750916,
+            0.005850628484040499
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Mild Abnormality",
+      "trial": "04",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04619515314698219,
+            0.9183083176612854,
+            0.035496506839990616
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.12779444456100464,
+            0.6243438124656677,
+            0.24786171317100525
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.052782438695430756,
+            0.9220149517059326,
+            0.025202631950378418
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Stable",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999924302101135,
+            4.4900582452100934e-07,
+            7.0683513513358776e-06
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.23774246871471405,
+            0.5327023863792419,
+            0.22955521941184998
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999707937240601,
+            9.397730877935828e-07,
+            2.8224125344422646e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Stable",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999091625213623,
+            2.510797457944136e-06,
+            8.844303374644369e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.2576649785041809,
+            0.4522477984428406,
+            0.2900872230529785
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999465346336365,
+            3.118883569186437e-06,
+            5.03413139085751e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M02",
+      "label": "Stable",
+      "trial": "04",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999451041221619,
+            5.673923169524642e-06,
+            4.9170317652169615e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.1798151731491089,
+            0.5252329707145691,
+            0.29495179653167725
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999019503593445,
+            8.751094355829991e-06,
+            8.941367559600621e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Marked Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.0890243873000145,
+            0.047139402478933334,
+            0.8638362288475037
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.13418596982955933,
+            0.6222705841064453,
+            0.2435433715581894
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.13499130308628082,
+            0.02826664410531521,
+            0.8367420434951782
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Marked Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.0912853479385376,
+            8.967855683295056e-05,
+            0.9086250066757202
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.12231691181659698,
+            0.6559266448020935,
+            0.2217564433813095
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.13604199886322021,
+            1.423157209501369e-05,
+            0.8639438152313232
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Mild Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04545767605304718,
+            0.9544381499290466,
+            0.00010421173647046089
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.09920255839824677,
+            0.7407429218292236,
+            0.1600545346736908
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04550062119960785,
+            0.9541676044464111,
+            0.0003316822985652834
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Mild Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.1354362815618515,
+            0.8630470037460327,
+            0.001516795251518488
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.09493224322795868,
+            0.6874740719795227,
+            0.21759377419948578
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.135838583111763,
+            0.8630721569061279,
+            0.0010892216814681888
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Mild Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.045460108667612076,
+            0.9091106653213501,
+            0.04542927071452141
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.11116185784339905,
+            0.6864946484565735,
+            0.20234350860118866
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.07068422436714172,
+            0.912324845790863,
+            0.016990896314382553
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Stable",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999701976776123,
+            1.0641346079864888e-06,
+            2.87757720798254e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.16326281428337097,
+            0.5087705850601196,
+            0.327966570854187
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999414682388306,
+            3.0822156986687332e-06,
+            5.5461761803599074e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Stable",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9993913769721985,
+            0.0004615704237949103,
+            0.00014707579975947738
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.22356872260570526,
+            0.4801408052444458,
+            0.29629042744636536
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9992536902427673,
+            0.00043483087210915983,
+            0.000311454467009753
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M03",
+      "label": "Stable",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999336004257202,
+            5.882438472326612e-06,
+            6.049965668353252e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.19795092940330505,
+            0.4586465060710907,
+            0.34340256452560425
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9998683333396912,
+            1.0234147339360788e-05,
+            0.00012149952090112492
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Marked Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.06218542903661728,
+            0.005183450877666473,
+            0.9326310753822327
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.1368740200996399,
+            0.5836812853813171,
+            0.27944475412368774
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.0909930020570755,
+            4.972783790435642e-05,
+            0.9089572429656982
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Marked Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04546245187520981,
+            0.18913322687149048,
+            0.7654043436050415
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.12768419086933136,
+            0.24167700111865997,
+            0.6306387782096863
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04561847448348999,
+            0.2196151614189148,
+            0.7347663640975952
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Marked Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.045468904078006744,
+            0.02902912348508835,
+            0.9255018830299377
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.08663080632686615,
+            0.2002507746219635,
+            0.7131183743476868
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.06660507619380951,
+            0.001793679897673428,
+            0.9316012859344482
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Mild Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.08986861258745193,
+            0.909254789352417,
+            0.0008766057435423136
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.10705721378326416,
+            0.6719334721565247,
+            0.22100934386253357
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.09021551162004471,
+            0.907275915145874,
+            0.002508574165403843
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Mild Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.044442929327487946,
+            0.9543899297714233,
+            0.0011672155233100057
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.07992397993803024,
+            0.6876435875892639,
+            0.23243241012096405
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04553637281060219,
+            0.9243531823158264,
+            0.030110472813248634
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Stable",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9998630881309509,
+            3.632587686297484e-05,
+            0.000100629375083372
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.20411714911460876,
+            0.45989057421684265,
+            0.3359922766685486
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9997276067733765,
+            7.73235151427798e-05,
+            0.00019505497766658664
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Stable",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9998073577880859,
+            1.4355625353346113e-05,
+            0.00017824783571995795
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.16170330345630646,
+            0.4277400076389313,
+            0.4105566740036011
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.999912679195404,
+            9.356965165352449e-06,
+            7.799045852152631e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M04",
+      "label": "Stable",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.999979555606842,
+            6.537511580972932e-07,
+            1.974378938029986e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.23346509039402008,
+            0.37569206953048706,
+            0.39084288477897644
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999603033065796,
+            1.4728964288224233e-06,
+            3.8245063478825614e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Marked Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.045398373156785965,
+            7.483750323444838e-06,
+            0.9545941948890686
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.146667018532753,
+            0.5617481470108032,
+            0.2915847599506378
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.045283857733011246,
+            3.6828409974987153e-06,
+            0.9547125101089478
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Marked Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.03276382386684418,
+            0.06715372204780579,
+            0.9000825881958008
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.09505332261323929,
+            0.23997484147548676,
+            0.6649717688560486
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04543890058994293,
+            0.2773069143295288,
+            0.6772542595863342
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Marked Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.044849660247564316,
+            0.0003932398685719818,
+            0.9547571539878845
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.12197376042604446,
+            0.37654998898506165,
+            0.5014762282371521
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.04530276358127594,
+            0.0001790368987713009,
+            0.9545182585716248
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Mild Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04742318391799927,
+            0.9208444356918335,
+            0.031732477247714996
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.06996255367994308,
+            0.8268499374389648,
+            0.10318756848573685
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04651740938425064,
+            0.9062184691429138,
+            0.04726425185799599
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Mild Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04819060489535332,
+            0.8641750812530518,
+            0.08763435482978821
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.0772414356470108,
+            0.6444847583770752,
+            0.2782737612724304
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.09171225875616074,
+            0.8743084073066711,
+            0.033979300409555435
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Stable",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9996112585067749,
+            6.6076959228666965e-06,
+            0.0003821993013843894
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.20150381326675415,
+            0.5501866340637207,
+            0.24830959737300873
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9998466968536377,
+            1.4266627658798825e-05,
+            0.00013913599832449108
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M05",
+      "label": "Stable",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999759197235107,
+            1.7420169342585723e-06,
+            2.2341142539517023e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.2744000256061554,
+            0.4770420789718628,
+            0.24855799973011017
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999195337295532,
+            4.961875674780458e-06,
+            7.537716737715527e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Marked Abnormality",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.025497442111372948,
+            0.00029890204314142466,
+            0.9742036461830139
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.1717420369386673,
+            0.460030734539032,
+            0.3682272136211395
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.021007804200053215,
+            0.00013637464144267142,
+            0.9788558483123779
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Marked Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.00978266540914774,
+            0.00022527073451783508,
+            0.989992082118988
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.1339258998632431,
+            0.3562970459461212,
+            0.5097770690917969
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.015127741731703281,
+            0.00015788325981702656,
+            0.9847145080566406
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Marked Abnormality",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            8.169811189873144e-05,
+            0.1516919732093811,
+            0.8482263088226318
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Marked Abnormality",
+          "probabilities": [
+            0.08067862689495087,
+            0.13011382520198822,
+            0.7892076373100281
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04400751367211342,
+            0.4923139810562134,
+            0.4636784791946411
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Mild Abnormality",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04546886309981346,
+            0.9452297687530518,
+            0.009301303885877132
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.10896345973014832,
+            0.673578679561615,
+            0.21745790541172028
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.04548739269375801,
+            0.9532856345176697,
+            0.0012269685976207256
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Stable",
+      "trial": "01",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999786615371704,
+            1.5053429933686857e-06,
+            1.9887716916855425e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.14909370243549347,
+            0.5416243672370911,
+            0.3092818558216095
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999082684516907,
+            4.207591700833291e-06,
+            8.751166024012491e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Stable",
+      "trial": "02",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999900460243225,
+            6.449993179558078e-07,
+            9.34170930122491e-06
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.16359613835811615,
+            0.5650079250335693,
+            0.2713959515094757
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999511241912842,
+            2.0156498976575676e-06,
+            4.685043677454814e-05
+          ]
+        }
+      }
+    },
+    {
+      "subject": "M06",
+      "label": "Stable",
+      "trial": "03",
+      "windows": 22,
+      "predictions": {
+        "full": {
+          "label": "Stable",
+          "probabilities": [
+            0.9999315142631531,
+            5.246259206614923e-06,
+            6.33072922937572e-05
+          ]
+        },
+        "imu_mean_replaced": {
+          "label": "Mild Abnormality",
+          "probabilities": [
+            0.15421268343925476,
+            0.5250018835067749,
+            0.3207854628562927
+          ]
+        },
+        "vision_mean_replaced": {
+          "label": "Stable",
+          "probabilities": [
+            0.9998772144317627,
+            1.1554034244909417e-05,
+            0.00011120120325358585
+          ]
+        }
+      }
+    }
+  ]
+}

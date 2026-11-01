@@ -1,0 +1,16 @@
+{
+  "cases": 18,
+  "max_abs_error": 0.0,
+  "dma_event_count": 72,
+  "checks": {
+    "all_golden_cases_executed": true,
+    "outputs_exact": true,
+    "receive_armed_before_send": true,
+    "overlay_download_requested": true,
+    "input_flushed": true,
+    "output_invalidated": true,
+    "buffers_freed": true,
+    "call_counter_correct": true
+  },
+  "passed": true
+}

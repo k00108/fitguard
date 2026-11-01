@@ -1,0 +1,7 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../fitguard_cnn_conv_tb.cpp in debug mode
+   Generating csim.exe
+FITGUARD_CNN_CSIM_MAX_ERROR=0.000122070312
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1472
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

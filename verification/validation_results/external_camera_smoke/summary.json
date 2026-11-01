@@ -1,0 +1,20 @@
+{
+  "mode": "external_fixed_camera_full_body",
+  "status": "passed",
+  "elapsed_seconds": 5.760774821999803,
+  "processed_frames": 33,
+  "processing_fps": 5.728396095951609,
+  "camera_capture_fps": 12.78063822726499,
+  "valid_target_ratio": 1.0,
+  "pl_operations": "grayscale + threshold + 3x3 open + 3x3 close",
+  "ps_operations": "contour selection + tracking + explainable gait indicators",
+  "classifier_used": false,
+  "classifier_note": "Collect external-view labels and retrain before claiming classification accuracy.",
+  "final_indicators": {
+    "tracked_seconds": 2.135275005999574,
+    "forward_speed_body_widths_s": 0.02190805397374918,
+    "vertical_bob_percent_height": 0.35154623518253414,
+    "silhouette_width_cv_percent": 15.753064664554564,
+    "estimated_cadence_steps_min": null
+  }
+}

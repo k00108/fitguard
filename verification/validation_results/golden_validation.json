@@ -1,0 +1,17 @@
+{
+  "bitstream": "fitguard_unified.bit",
+  "frames": 30,
+  "pixels_per_frame": 76800,
+  "pixels_compared": 2304000,
+  "threshold_rule": "foreground when Y > 100",
+  "morphology": "3x3 rectangular open then 3x3 rectangular close, one iteration each",
+  "border_rule": "constant zero padding at every morphology stage",
+  "total_differing_pixels": 0,
+  "maximum_error": 0,
+  "exact_match": true,
+  "dma_ms_mean": 4.48810536666618,
+  "dma_ms_p50": 4.860344999997324,
+  "dma_ms_p95": 5.020122199766774,
+  "dma_ms_p99": 5.383711210133697,
+  "camera_capture_fps": 12.685299831879947
+}

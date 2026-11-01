@@ -1,0 +1,57 @@
+{
+  "fixed_format": "ap_fixed<18,5,AP_RND,AP_SAT>",
+  "input_floats": 1472,
+  "output_floats": 160,
+  "golden_cases": 18,
+  "model_dir": "models/cnn_v6",
+  "weights": {
+    "imu_conv1_0": [
+      9,
+      8,
+      32
+    ],
+    "imu_conv1_1": [
+      32
+    ],
+    "imu_conv2_0": [
+      5,
+      32,
+      64
+    ],
+    "imu_conv2_1": [
+      64
+    ],
+    "imu_conv3_0": [
+      3,
+      64,
+      96
+    ],
+    "imu_conv3_1": [
+      96
+    ],
+    "vision_conv1_0": [
+      9,
+      7,
+      24
+    ],
+    "vision_conv1_1": [
+      24
+    ],
+    "vision_conv2_0": [
+      5,
+      24,
+      48
+    ],
+    "vision_conv2_1": [
+      48
+    ],
+    "vision_conv3_0": [
+      3,
+      48,
+      64
+    ],
+    "vision_conv3_1": [
+      64
+    ]
+  }
+}

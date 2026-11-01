@@ -1,0 +1,18 @@
+{
+  "windows": 18,
+  "subjects": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
+  "class_counts": {
+    "Stable": 6,
+    "Mild Abnormality": 6,
+    "Marked Abnormality": 6
+  },
+  "predicted_matches_label": 18,
+  "purpose": "Numerical board/runtime regression only; not a substitute for LOSO evaluation."
+}

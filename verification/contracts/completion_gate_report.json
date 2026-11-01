@@ -1,0 +1,16 @@
+{
+  "package_root": ".",
+  "checks": {
+    "nine_steps_complete": true,
+    "nine_addon_files_present": true,
+    "stable_bitstream_not_packaged": true,
+    "all_contract_reports_pass": true,
+    "live_backend_is_pl": true,
+    "live_acceleration_active": true,
+    "live_dma_exercised": true,
+    "live_has_no_fallback_reason": true,
+    "bit_hash_matches_contract": true,
+    "hwh_hash_matches_contract": true
+  },
+  "passed": true
+}

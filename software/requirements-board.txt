@@ -1,0 +1,8 @@
+# PYNQ itself and the board-specific drivers are supplied by the PYNQ image.
+# Install only if they are absent from that image; exact versions should match
+# the board image used for final acceptance.
+numpy
+opencv-python
+ipywidgets
+joblib
+scikit-learn

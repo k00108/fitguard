@@ -1,0 +1,228 @@
+{
+  "base_model": "range_fusion_v2",
+  "guard_uses_labels": false,
+  "vision_center_excursion_removed_from_severity_branch": true,
+  "guard": "only close mild-vs-marked decisions at a coherent trajectory-end turn",
+  "strong_marked_predictions_unchanged": true,
+  "raw": {
+    "window_accuracy": 0.9904868494683827,
+    "window_macro_f1": 0.9905919694608745,
+    "window_log_loss": 0.029805958007900223,
+    "window_confusion_matrix": [
+      [
+        564,
+        0,
+        0
+      ],
+      [
+        2,
+        568,
+        2
+      ],
+      [
+        4,
+        9,
+        638
+      ]
+    ],
+    "trial_accuracy": 1.0,
+    "trial_macro_f1": 1.0,
+    "trial_confusion_matrix": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        17
+      ]
+    ],
+    "windows": 1787,
+    "trials": 47
+  },
+  "candidates": {
+    "margin_0.05": {
+      "window_accuracy": 0.9904868494683827,
+      "window_macro_f1": 0.9905919694608745,
+      "window_log_loss": 0.029805958007900223,
+      "window_confusion_matrix": [
+        [
+          564,
+          0,
+          0
+        ],
+        [
+          2,
+          568,
+          2
+        ],
+        [
+          4,
+          9,
+          638
+        ]
+      ],
+      "trial_accuracy": 1.0,
+      "trial_macro_f1": 1.0,
+      "trial_confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          17
+        ]
+      ],
+      "windows": 1787,
+      "trials": 47,
+      "adjusted_windows": 0
+    },
+    "margin_0.10": {
+      "window_accuracy": 0.9904868494683827,
+      "window_macro_f1": 0.9905919694608745,
+      "window_log_loss": 0.029805958007900223,
+      "window_confusion_matrix": [
+        [
+          564,
+          0,
+          0
+        ],
+        [
+          2,
+          568,
+          2
+        ],
+        [
+          4,
+          9,
+          638
+        ]
+      ],
+      "trial_accuracy": 1.0,
+      "trial_macro_f1": 1.0,
+      "trial_confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          17
+        ]
+      ],
+      "windows": 1787,
+      "trials": 47,
+      "adjusted_windows": 0
+    },
+    "margin_0.15": {
+      "window_accuracy": 0.9904868494683827,
+      "window_macro_f1": 0.9905919694608745,
+      "window_log_loss": 0.029805958007900223,
+      "window_confusion_matrix": [
+        [
+          564,
+          0,
+          0
+        ],
+        [
+          2,
+          568,
+          2
+        ],
+        [
+          4,
+          9,
+          638
+        ]
+      ],
+      "trial_accuracy": 1.0,
+      "trial_macro_f1": 1.0,
+      "trial_confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          17
+        ]
+      ],
+      "windows": 1787,
+      "trials": 47,
+      "adjusted_windows": 0
+    },
+    "margin_0.20": {
+      "window_accuracy": 0.9904868494683827,
+      "window_macro_f1": 0.9905919694608745,
+      "window_log_loss": 0.029805958007900223,
+      "window_confusion_matrix": [
+        [
+          564,
+          0,
+          0
+        ],
+        [
+          2,
+          568,
+          2
+        ],
+        [
+          4,
+          9,
+          638
+        ]
+      ],
+      "trial_accuracy": 1.0,
+      "trial_macro_f1": 1.0,
+      "trial_confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          17
+        ]
+      ],
+      "windows": 1787,
+      "trials": 47,
+      "adjusted_windows": 0
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "run_id": "cnn_v6_run_0004",
+  "record_status": "completed",
+  "started_board_time": "2025-05-05T21:53:22+08:00",
+  "board_time_is_authoritative": false,
+  "model": "cnn_v8_pl_v6_weights",
+  "model_dir": "/home/xilinx/jupyter_notebooks/FitGuard_Unified_Test/trained_models_motion_v2_cnn_v6_candidate",
+  "backend": {
+    "requested": "pl",
+    "active": "pl_cnn_conv1d",
+    "pl_acceleration_active": true,
+    "fallback_reason": null,
+    "pl": {
+      "active": true,
+      "bitstream": "/home/xilinx/jupyter_notebooks/FitGuard_Unified_Test/fitguard_unified_cnn_pl.bit",
+      "dma": "axi_dma_cnn_0",
+      "calls": 1,
+      "last_ms": 33.471704000476166
+    }
+  },
+  "stop_reason": "duration_complete",
+  "run_duration_s": 12.815419358999861,
+  "prediction_count_total": 0,
+  "predictions": [],
+  "sensor_events": [
+    {
+      "timestamp": 5832.63143323,
+      "state": "WARMING_UP",
+      "reason": "collecting initial synchronized window"
+    },
+    {
+      "timestamp": 5833.135335844,
+      "state": "OK",
+      "reason": "brief vision fluctuation within grace period"
+    },
+    {
+      "timestamp": 5834.533153061,
+      "state": "DATA_INSUFFICIENT",
+      "reason": "person tracking unreliable"
+    }
+  ],
+  "inference_ms": {
+    "count": 0,
+    "mean": null,
+    "p50": null,
+    "p95": null,
+    "max": null
+  },
+  "event_directory": "/home/xilinx/jupyter_notebooks/FitGuard_Unified_Test/fitguard_marked_events",
+  "dashboard": {
+    "running": false
+  },
+  "gateway": {
+    "port": "/dev/ttyUSB0",
+    "bytes": 7380,
+    "frames": 90,
+    "bad_crc": 0,
+    "bad_length": 0,
+    "samples": 360,
+    "lost_samples": 0,
+    "out_of_order_samples": 0,
+    "queue_drops": 0,
+    "receive_ratio": 1.0,
+    "sender_hz": 49.999986072427276,
+    "last_packet_age_s": 1.6220378000007258
+  },
+  "terminal_fault": null
+}

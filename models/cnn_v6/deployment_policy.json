@@ -1,0 +1,20 @@
+{
+  "candidate_name": "cnn_v6_no_excursion",
+  "vision_center_excursion_used_for_severity": false,
+  "position_use": "turn segmentation and field-of-view validity only",
+  "primary_severity_evidence": [
+    "vision speed",
+    "dynamic acceleration",
+    "jerk",
+    "raw gyroscope",
+    "temporal persistence",
+    "vision-IMU agreement"
+  ],
+  "turn_guard": {
+    "uses_ground_truth_label": false,
+    "definition": "physical/trajectory endpoint + sufficient displacement + one coherent reversal",
+    "only_adjust_close_mild_marked_decisions": true,
+    "strong_marked_predictions_unchanged": true
+  },
+  "reference_report": "work\\motion_m01_m06_analysis\\turn_guard_no_excursion_evaluation.json"
+}

@@ -1,0 +1,8 @@
+{
+  "windows": 1787,
+  "keras_numpy_class_agreement": 1.0,
+  "probability_max_abs_error": 1.1920928955078125e-07,
+  "probability_mean_abs_error": 5.333174346588976e-09,
+  "numpy_ms_per_window_local": 1.4314982652575325,
+  "turn_guard_checked_separately": true
+}

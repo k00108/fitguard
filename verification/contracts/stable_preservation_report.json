@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "board_stable_bit_matches_pre_pl_export": true,
+    "board_stable_model_matches_20261012_snapshot": true,
+    "original_vivado_project_separate_from_cnn_pl_project": true,
+    "installer_never_packages_or_creates_stable_bitstream": true
+  },
+  "evidence": {
+    "stable_bit_sha256_board": "69090DA7AB734FB07E54E07C3351F6B87D2A7C5942982244AEE6E72D1D61D1A3",
+    "stable_bit_sha256_pre_pl_exports": "69090DA7AB734FB07E54E07C3351F6B87D2A7C5942982244AEE6E72D1D61D1A3",
+    "stable_model_files": 8,
+    "stable_model_tree_sha256_board": "91F893770B9830041679E94C53FB836BB3174EF36F3A32FB3B3580A831D4BF16",
+    "stable_model_tree_sha256_snapshot": "91F893770B9830041679E94C53FB836BB3174EF36F3A32FB3B3580A831D4BF16",
+    "original_xpr": "<ORIGINAL_PROJECT>/fitguard_unified.xpr",
+    "original_xpr_sha256": "8AA9971173DC52DF62206A9025797B1C578547FDBA8F07CF84B1F0FFB3B12E26",
+    "original_xpr_last_write": "2026-10-01T11:32:11+08:00",
+    "independent_xpr": "<PROJECT_ROOT>/vivado/fitguard_unified_cnn_pl.xpr",
+    "independent_xpr_sha256": "5573FC04BF789BFE5BC37AE5553B70170B450A6145F7A944D85958577908A08F"
+  },
+  "passed": true
+}

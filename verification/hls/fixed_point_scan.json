@@ -1,0 +1,90 @@
+{
+  "windows": 1232,
+  "trials": 56,
+  "formats": {
+    "Q18_frac10": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.013029992580413818,
+      "max_activation_abs": {
+        "imu_conv1": 8.11328125,
+        "imu_conv2": 9.6689453125,
+        "imu_conv3": 13.220703125,
+        "vision_conv1": 8.205078125,
+        "vision_conv2": 8.3779296875,
+        "vision_conv3": 13.3798828125
+      }
+    },
+    "Q18_frac11": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.0060090720653533936,
+      "max_activation_abs": {
+        "imu_conv1": 8.1103515625,
+        "imu_conv2": 9.66455078125,
+        "imu_conv3": 13.21435546875,
+        "vision_conv1": 8.21875,
+        "vision_conv2": 8.392578125,
+        "vision_conv3": 13.40673828125
+      }
+    },
+    "Q18_frac12": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.0048482418060302734,
+      "max_activation_abs": {
+        "imu_conv1": 8.107666015625,
+        "imu_conv2": 9.662109375,
+        "imu_conv3": 13.2158203125,
+        "vision_conv1": 8.212158203125,
+        "vision_conv2": 8.38623046875,
+        "vision_conv3": 13.39306640625
+      }
+    },
+    "Q18_frac13": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.00213623046875,
+      "max_activation_abs": {
+        "imu_conv1": 8.1107177734375,
+        "imu_conv2": 9.6669921875,
+        "imu_conv3": 13.2198486328125,
+        "vision_conv1": 8.2117919921875,
+        "vision_conv2": 8.3868408203125,
+        "vision_conv3": 13.3934326171875
+      }
+    },
+    "Q20_frac14": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.0007500648498535156,
+      "max_activation_abs": {
+        "imu_conv1": 8.1102294921875,
+        "imu_conv2": 9.6668701171875,
+        "imu_conv3": 13.2181396484375,
+        "vision_conv1": 8.2120361328125,
+        "vision_conv2": 8.38592529296875,
+        "vision_conv3": 13.3984375
+      }
+    },
+    "Q20_frac15": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.00042134523391723633,
+      "max_activation_abs": {
+        "imu_conv1": 8.110107421875,
+        "imu_conv2": 9.6668701171875,
+        "imu_conv3": 13.219085693359375,
+        "vision_conv1": 8.212432861328125,
+        "vision_conv2": 8.38671875,
+        "vision_conv3": 13.397674560546875
+      }
+    },
+    "Q22_frac16": {
+      "class_agreement": 1.0,
+      "max_dense_feature_error": 0.00023651123046875,
+      "max_activation_abs": {
+        "imu_conv1": 8.11004638671875,
+        "imu_conv2": 9.666366577148438,
+        "imu_conv3": 13.219390869140625,
+        "vision_conv1": 8.212188720703125,
+        "vision_conv2": 8.386032104492188,
+        "vision_conv3": 13.397781372070312
+      }
+    }
+  }
+}

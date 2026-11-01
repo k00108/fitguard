@@ -1,0 +1,11 @@
+{
+  "cases": 18,
+  "max_abs_error": 0.0001220703125,
+  "warmup_latency_ms": 12086.949139000011,
+  "mean_latency_ms": 33.21872677777391,
+  "p50_latency_ms": 33.18132300000798,
+  "p95_latency_ms": 33.427558349958986,
+  "max_latency_ms": 33.620719999987614,
+  "passed": true,
+  "threshold": 0.001
+}

@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "bit_exists_nonempty": true,
+    "hwh_exists_nonempty": true,
+    "cnn_dma_present": true,
+    "cnn_conv_present": true,
+    "cnn_dma_base_0x40410000": true,
+    "cnn_dma_mm2s_32bit": true,
+    "cnn_dma_s2mm_32bit": true,
+    "dma_to_conv_input_connected": true,
+    "conv_to_dma_output_connected": true
+  },
+  "details": {
+    "dma_base_address": "0x40410000",
+    "mm2s_width": "32",
+    "s2mm_width": "32",
+    "bit_path": "hardware/bitstream/fitguard_unified_cnn_pl.bit",
+    "hwh_path": "hardware/bitstream/fitguard_unified_cnn_pl.hwh",
+    "bit_bytes": 4045692,
+    "hwh_bytes": 480601,
+    "bit_sha256": "C31B8FC0D861054B7657A1D63747E90AD8AFB3299BE315F1BBC19C95EBB96A47",
+    "hwh_sha256": "AEBB8011EBC7878B9D18695B0D19CA016FEBC0EFE3A90CF0617B5539DE402231"
+  },
+  "passed": true
+}

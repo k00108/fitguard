@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "check_only_writes_nothing": true,
+    "all_nine_addon_files_installed": true,
+    "stable_bitstream_not_created_or_replaced": true,
+    "repeat_install_rejected": true,
+    "repeat_install_changed_nothing": true,
+    "no_staging_files_left": true
+  },
+  "passed": true
+}

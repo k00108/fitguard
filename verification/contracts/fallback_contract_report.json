@@ -1,0 +1,9 @@
+{
+  "cases": 18,
+  "class_matches": 18,
+  "max_probability_error": 0.0,
+  "auto_backend_after_unavailable_pl": "numpy_ps_fallback",
+  "fallback_reason_recorded": true,
+  "strict_pl_rejects_unavailable_backend": true,
+  "passed": true
+}
